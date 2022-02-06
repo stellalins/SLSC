@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+            color: aqua
+        }
+        
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: blueviolet;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        fieldset{
+            border: 3px solid aqua;
+        }
+
+        legend{
+            text-align: center;
+        }
+
+        .inputbox{
+            position: relative;
+        }
+
+        .inputuser{
+           background: none;
+           border-bottom: 1px solid white;
+           outline: none;
+           color: white;
+           width: 100%;
+        }
+
+        #submit{
+            background: aqua;
+            width: 100%;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b> Cadastro de Usuário</b></legend>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="nome" id="nome" class="inputuser" required>
+                    <label for="nome">Nome Completo</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="username" id="Username" class="inputuser" required>
+                    <label for="username">Username</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="cpf" id="cpf" class="inputuser" required>
+                    <label for="cpf">CPF</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="email" name="email" id="email" class="inputuser" required>
+                    <label for="email">E-mail</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="password" name="senha" id="senha" class="inputuser" required>
+                    <label for="senha">Senha</label>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" name="submit" id="submit">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    
+</body>
+</html>
