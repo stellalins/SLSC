@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício04</title>
+
+    <style>
+        .body{
+            margin:0
+        }
+       
+        .content{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .item{
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            width: 187px;
+            height: 187px;
+            color: black;
+            box-shadow:-15px 15px   palevioletred;
+            border: 2px solid palevioletred;
+            margin: 15px;
+        }
+        
+        #i5 {
+            flex-grow: 1;
+        }
+        #i1, #i2 {
+            flex-grow: 2;
+        }
+        #i3, #i4 {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+  <main>
+    <section class="content">
+        
+        <div class="item" ></div>
+        <div class="item" ></div>
+        <div class="item" ></div>
+        <div class="item" ></div>
+        <div class="item" id="i5"></div>
+    
+    </section>
+    <section class="content">
+        
+        <div class="item" id="i1"></div>
+        <div class="item" id="i2"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    
+    </section>
+    <section class="content">
+        
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item" id="i3"></div>
+        <div class="item" id="i4"></div>
+    
+    </section>
+  </main>
+    
+</body>
+</html>
